@@ -13,5 +13,11 @@ Back: Простой json-server
    ```bash
    git clone https://github.com/Pro100Pre100/-testTusk.git
    
-3. В папке client пропишите npm i, далее npm run dev
-4. В папке server пропишите npx json-server seminars.json
+3. Перейдите в папку client, установите зависимости и запустите фронтенд:
+4. ```bash
+   npm install
+   npm run dev
+   
+5. Перейдите в папку server и запустите json-server:
+ ```bash
+  npx json-server seminars.json
