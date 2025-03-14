@@ -14,7 +14,7 @@ Back: Простой json-server
    git clone https://github.com/Pro100Pre100/-testTusk.git
    
 3. Перейдите в папку client, установите зависимости и запустите фронтенд:
-4. ```bash
+   ```bash
    npm install
    npm run dev
    
