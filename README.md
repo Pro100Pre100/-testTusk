@@ -4,7 +4,7 @@
 
 # Стэк
 
-Front-end: React + TypeScript
+Front-end: React + TypeScript + Material UI
 Back: Простой json-server 
 
 ## Как использовать
