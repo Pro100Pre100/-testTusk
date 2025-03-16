@@ -105,7 +105,7 @@ function App() {
                 />)}
             </Grid2>
           </>
-          : <Alert severity="error">Error Error on server side</Alert>}
+          : <Alert severity="error">Error on server side</Alert>}
     </div>
   )
 }
