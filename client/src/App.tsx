@@ -25,18 +25,25 @@ function App() {
   }
 
   useEffect(() => {
-    if (updateSeminars) {
-      const test = async () => {
-        //await new seminars
-        setSeminars([]);
+    try {
+      if (updateSeminars) {
+        const test = async () => {
+          //await new seminars
+          setSeminars([]);
 
-        const result = await getSeminars();
-        setSeminars(result);
+          const result = await getSeminars();
+          setSeminars(result);
+        }
+        test();
       }
-      test();
-
+    }
+    catch (error) {
       setUpdateSeminars(false);
     }
+    finally {
+      setUpdateSeminars(false);
+    }
+
   }, [updateSeminars])
 
   //reset the state after update the page
@@ -45,7 +52,7 @@ function App() {
     navigate('/', { state: null })
   }
 
-    //clear state after close the modal
+  //clear state after close the modal
 
   useEffect(() => {
     if (!deleteModal && !editModal) {
